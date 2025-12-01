@@ -26,7 +26,7 @@ pipeline {
                 // This is the most common way to clone the repo associated with the Jenkinsfile.
                 checkout scm: [$class: 'GitSCM',
                               branches: [[name: 'refs/heads/${params.BRANCH_TO_BUILD}']],
-                              userRemoteConfigs: [[url: 'https://github.com/YOUR_GITHUB_USERNAME/my-python-app.git']]]
+                              userRemoteConfigs: [[url: 'https://github.com/MadhanVelpula/jenkinstest4']]]
                 // IMPORTANT: Replace 'YOUR_GITHUB_USERNAME' and 'my-python-app.git' with your actual repo details.
                 // If your repo is private, you might also need credentials:
                 // credentialsId: 'YOUR_GITHUB_CREDENTIALS_ID_FROM_JENKINS'
